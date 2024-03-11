@@ -8,12 +8,9 @@ function App() {
   return (
     <div>
        <Header/>
-       <div className=" w-full h-screen">
        <Hero/> 
        <Features/>
        <Footer/>
-       </div>
-       
     </div>
   )
 }
