@@ -9,7 +9,7 @@ import tether from "../assets/Tether_Logo.svg";
 const Footer = () => {
   return (
     <footer
-      className="footer bg-neutral-100 text-center mt-10 text-black lg:text-left">
+      className="footer bg-neutral-100 text-center text-black lg:text-left">
       <div
         className="flex items-center justify-center border-b-2 border-neutral-200 p-6 lg:justify-between">
         <div className="mr-12 hidden lg:block">
@@ -45,36 +45,28 @@ const Footer = () => {
             </h6>
           </div>
 
-          {/* <!-- Useful links section -->
+           {/* <!-- Useful links section --> */}
           <div className="">
             <h6
               className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Useful links
+              Company
             </h6>
             <p className="mb-4">
               <a className="text-neutral-600 dark:text-neutral-200"
-              >Pricing</a>
+              >Legal & privacy</a>
             </p>
             <p className="mb-4">
               <a className="text-neutral-600 dark:text-neutral-200"
               >Settings</a>
             </p>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Orders</a>
-            </p>
-            <p>
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Help</a>
-            </p>
-          </div> */}
+          </div> 
           
           
         </div>
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-neutral-200 p-6 text-center">
+      <div className="bg-neutral-100 p-6 text-center">
         <span>© 2024 Copyright:</span>
         <a
           className="font-semibold text-neutral-600"

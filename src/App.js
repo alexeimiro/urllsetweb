@@ -4,7 +4,6 @@ import Footer from './components/Footer'
 import Features from './components/Features'
 
 function App() {
-  
 
   return (
     <div>
