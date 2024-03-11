@@ -4,10 +4,10 @@ import logo from "../assets/logo.svg";
 
 const Header = () => {
     let Links = [
-        {name:"HOME",link:"/"},
-        {name:"SERVICE",link:"/"},
-        {name:"ABOUT",link:"/"},
-        {name:"CONTACT",link:"/"},
+        {name:"About",link:"/"},
+        {name:"Mission",link:"/"},
+        {name:"Contact",link:"/"},
+        {name:"Help",link:"/"},
     ];
     let [open, setOpen] = useState(false);
     let [isTop, setIsTop] = useState(true);
@@ -41,17 +41,17 @@ const Header = () => {
                 </div>
 
                 {/* Link items */}
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-100 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+                <ul className={`md:flex md:items-center absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-100 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                     {
                         Links.map((link, index) => (
-                            <li key={index} className='md:ml-8 md:my-0 my-7 font-medium'>
+                            <li key={index} className='mx-6 md:ml-8 md:my-0 my-7 font-medium'>
                                 <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500 text-xs'>{link.name}</a>
                             </li>
                         ))
                     }
                     <div className="flex justify-center md:justify-start">
-                        <a href="https://urllset.onrender.com/" className="button bg-gray-200 text-black hover:bg-gray-300 font-medium md:mx-2">Sign in</a>
-                        <a href="https://urllset.onrender.com/register" className="button bg-blue-600 text-white hover:bg-blue-700 font-medium md:mx-2 mt-2 md:mt-0">Sign up</a>
+                        <a href="https://urllset.onrender.com/" className="button bg-gray-200 text-black hover:bg-gray-300 mx-2 md:mx-2">Sign in</a>
+                        <a href="https://urllset.onrender.com/register" className="button bg-blue-600 text-white hover:bg-blue-700 mx-2 md:mx-2">Sign up</a>
                     </div>
                 </ul>
             </div>

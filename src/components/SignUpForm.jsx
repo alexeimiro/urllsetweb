@@ -36,11 +36,11 @@ const Contactform = () => {
                 placeholder="satoshi@nakamoto.com"
                 name="user_email"
                 required
-                className="pl-2 py-2 border-2 rounded-lg w-full md:w-auto"
+                className="pl-4 text-lg p-3 border rounded-lg w-full md:w-auto"
               />
               <button
                 type="submit"
-                className="button w-full bg-blue-600 px-8 py-4 duration-300 ease-in-out hover:bg-blue-700"
+                className="button w-full bg-blue-600 duration-300 ease-in-out hover:bg-blue-700"
               >
                 Get started
               </button>
