@@ -9,17 +9,17 @@
 
 
 .button {
-  font-weight: 500; /* font-medium */
+  font-weight: 600; /* font-medium */
   padding: 0.5rem 1rem; /* px-4 py-2 */
   border-radius: 9999px; /* rounded-full */
   transition-duration: 0.5s; /* duration-500 */
   min-width: 100px; 
+  max-width: 160px;
   margin-top: 3px;
   margin-bottom: 3px;
 
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @media (max-width: 640px) {

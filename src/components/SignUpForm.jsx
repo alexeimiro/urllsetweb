@@ -24,6 +24,7 @@ const Contactform = () => {
 
   return (
     <section className="px-2 rounded-lg">
+      <p className='font-semibold'>Email address</p>
       <div>
         {!isSubmitted && (
           <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3 text-white">
