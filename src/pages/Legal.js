@@ -4,7 +4,7 @@ export const Legal = () => {
     return (
       <div className="container mx-auto px-4 py-8 mt-20">
         <Privacypolicy/>
-      <h2 className="text-2xl font-bold mb-4">Terms & Conditions for Urllset</h2>
+      <h2 className="text-2xl font-bold mb-4">Terms & Conditions</h2>
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-4">Introduction</h3>
         <p className="mb-4">Welcome to Urllset, a platform dedicated to providing secure investment opportunities in property crowdfunding with a guaranteed 23% annual Return on Investment (ROI) on the stake invested. By accessing and using our website and services, you agree to be bound by the following terms and conditions (the 'Terms'). Please read these Terms carefully before engaging with our platform.</p>

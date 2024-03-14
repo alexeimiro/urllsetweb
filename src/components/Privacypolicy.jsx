@@ -3,7 +3,7 @@ import React from 'react';
 function Privacypolicy() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-4">Privacy Policy for Urllset</h2>
+      <h2 className="text-2xl font-bold mb-4">Privacy Policy</h2>
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-4">Introduction</h3>
         <p className="mb-4">At Urllset, we are committed to protecting the privacy and security of our users' information. This Privacy Policy outlines the types of personal information we collect, how we use it, and the measures we take to protect it. By using our platform, you agree to the collection and use of information in accordance with this policy.</p>
