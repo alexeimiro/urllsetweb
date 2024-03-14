@@ -7,6 +7,7 @@ import westernunion from "../assets/westernunion.png";
 import bitcoin from "../assets/bitcoin.png";
 import tether from "../assets/Tether_Logo.svg";
 import instagram from "../assets/icon-instagram.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,11 +30,9 @@ const Footer = () => {
               Company
             </h6>
             <p className="mb-4">
-              <a>Legal & privacy</a>
-            </p>
-            <p className="mb-4">
-              <a>Terms & conditions</a>
-            </p>
+        <Link to="/legal">Legal & privacy</Link>
+      </p>
+            
           </div> 
         </div>
       </div>

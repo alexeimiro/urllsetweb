@@ -1,20 +1,33 @@
-import Header from'./components/Header'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
-import Features from './components/Features'
-import Features1 from './components/Features1'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Features from './components/Features';
+import Features1 from './components/Features1';
+import { Legal } from './pages/Legal';
 
 function App() {
-
   return (
-    <div>
-       <Header/>
-       <Hero/> 
-       <Features/>
-       <Features1/>
-       <Footer/>
-    </div>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/legal" element={<Legal />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+function MainPage() {
+  return (
+    <>
+      <Hero />
+      <Features />
+      <Features1 />
+    </>
+  );
+}
+
+export default App;

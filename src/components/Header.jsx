@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import logo from "../assets/logo.svg";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     let Links = [
@@ -25,11 +26,13 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`Header w-full fixed top-0 left-0 bg-white py-2 ${isTop ? '' : 'shadow-sm'}`}>
+        <header className={`Header w-full fixed top-0 left-0 bg-white py-3 ${isTop ? '' : 'shadow-sm'}`}>
             <div className='md:flex items-center justify-between py-1 md:px-10 px-7'>
                 {/* logo section and Mobile Sign up button */}
                 <div className='flex items-center gap-4'>
-                    <img src={logo} className='logo-black ' alt="logo" />
+                <Link to="/">
+                    <img src={logo} className='logo-black' alt="logo" />
+                </Link>
                     <a href="https://urllset.onrender.com/register" className="button absolute right-20 bg-blue-600 text-white hover:bg-blue-700 md:hidden font-medium">Sign up</a>
                 </div>
 
